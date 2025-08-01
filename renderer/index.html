@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gratify Me</title>
+  <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="titlebar">
+  <div id="drag-region"></div>
+<button id="minimize-btn" aria-label="Minimize">
+  <img src="icons/minBtn.PNG" alt="Minimize" />
+</button>
+<button id="close-btn" aria-label="Close">
+  <img src="icons/xBtn.PNG" alt="Close" />
+</button>
+    </div>
+    <section id="home">
+    <h1>Gratify Me</h1>
+<button id="go-rewards" class="icon-btn">
+  <img src="icons/rewardBtn.PNG" alt="Rewards">
+</button>
+
+<button id="go-todo" class="icon-btn">
+  <img src="icons/listBtn.PNG" alt="To‑Do">
+</button>
+  </section>
+
+  <section id="rewards" class="hidden">
+    <button class="back">← Back</button>
+    <h2>Rewards</h2>
+    <input id="reward-input" placeholder="Add reward">
+    <button id="add-reward">Add</button>
+    <ul id="rewards-list"></ul>
+  </section>
+
+  <section id="todos" class="hidden">
+    <button class="back">← Back</button>
+    <h2>To‑Do List</h2>
+    <input id="todo-text" placeholder="Task">
+    <input id="todo-date" type="date">
+    <button id="add-todo">Add</button>
+    <ul id="todos-list"></ul>
+  </section>
+
+  <div id="modal" class="hidden">
+    <div id="modal-content">
+      <p id="modal-text"></p>
+      <button id="close-modal">OK</button>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

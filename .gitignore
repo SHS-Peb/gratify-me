@@ -1,0 +1,22 @@
+# Node modules
+node_modules/
+
+# Electron build artifacts
+dist/
+out/
+
+# Local song storage
+songs.json
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Logs
+*.log
+
+# npm/yarn lockfiles (optional depending on preference)
+package-lock.json
+yarn.lock
