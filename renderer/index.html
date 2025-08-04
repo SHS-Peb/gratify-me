@@ -28,22 +28,34 @@
 </button>
   </section>
 
-  <section id="rewards" class="hidden">
-    <button class="back">← Back</button>
+<section id="rewards" class="hidden">
+  <div id="rewards-header">
+    <button class="back icon-btn" title="Back">
+      <img src="icons/backBtn.PNG" alt="Back">
+    </button>
     <h2>Rewards</h2>
-    <input id="reward-input" placeholder="Add reward">
-    <button id="add-reward">Add</button>
-    <ul id="rewards-list"></ul>
-  </section>
+  </div>
+  
+  <input id="reward-input" placeholder="Add reward" />
+  <button id="add-reward" class="icon-btn">
+    <img src="icons/addBtn.PNG" alt="Add" />
+  </button>
+  <ul id="rewards-list"></ul>
+</section>
 
-  <section id="todos" class="hidden">
-    <button class="back">← Back</button>
-    <h2>To‑Do List</h2>
-    <input id="todo-text" placeholder="Task">
-    <input id="todo-date" type="date">
-    <button id="add-todo">Add</button>
-    <ul id="todos-list"></ul>
-  </section>
+
+<section id="todos" class="hidden">
+  <button class="icon-btn back" id="todos-back">
+    <img src="icons/backBtn.PNG" alt="Back">
+  </button>2
+  <h2>To‑Do List</h2>
+  <input id="todo-text" placeholder="Task">
+  <input id="todo-date" type="date">
+  <button class="icon-btn" id="add-todo">
+    <img src="icons/addBtn.PNG" alt="Add">
+  </button>
+  <ul id="todos-list"></ul>
+</section>
 
   <div id="modal" class="hidden">
     <div id="modal-content">

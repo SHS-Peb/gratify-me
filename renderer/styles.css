@@ -50,6 +50,43 @@ button {
   padding: 10px;
 }
 
+#add-reward img{
+  width: 5rem; 
+  height: 5rem;
+  object-fit: contain;
+  padding: 0px;
+  margin: 0px;
+}
+
+.icon-btn.back img{
+  width: 7rem; 
+  height: 7rem;
+  object-fit: contain;
+}
+
+#rewards-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+/* Center the h2 absolutely */
+#rewards-header h2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 1.8rem;
+  pointer-events: none; /* so clicks go to back button if overlapping */
+}
+
+.back.icon-btn {
+  flex-shrink: 0; /* keep back button sized */
+}
+
+
 .icon-btn img {
   width: 60%; 
   height: 60%;
