@@ -43,26 +43,26 @@ button {
     cursor: pointer; 
 }
 
-.icon-btn {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-}
-
-#add-reward img{
-  width: 5rem; 
-  height: 5rem;
+.add-reward img{
+  width: 4rem; 
+  height: 4rem;
   object-fit: contain;
   padding: 0px;
   margin: 0px;
 }
 
+.icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 button.icon-btn img.delete-btn {
   width: auto;
-  height: 2.5rem;
+  height: 3rem;
   padding: 0px;
   margin: 0px;
+  padding-right: 21px;
 }
 
 .icon-btn.back img{
@@ -71,7 +71,7 @@ button.icon-btn img.delete-btn {
   object-fit: contain;
 }
 
-#rewards-header {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -79,20 +79,18 @@ button.icon-btn img.delete-btn {
   margin-bottom: 10px;
 }
 
-/* Center the h2 absolutely */
-#rewards-header h2 {
+.header h2 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   margin: 0;
   font-size: 1.8rem;
-  pointer-events: none; /* so clicks go to back button if overlapping */
+  pointer-events: none; 
 }
 
 .back.icon-btn {
-  flex-shrink: 0; /* keep back button sized */
+  flex-shrink: 0; 
 }
-
 
 .icon-btn img {
   width: 60%; 
@@ -108,16 +106,32 @@ ul {
     padding: 0; 
 }
 
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 10px;
+}
+
+.title-row h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
 li { 
     margin: 6px 0; 
     display: flex; 
     justify-content: space-between; 
-    background: #1e293b; 
-    padding: 8px; 
-    border-radius: 6px; }
+    align-items: center;  
+    padding-left: 21px;
+    background: #1e293b;  
+    border-radius: 6px; 
+    font-size: 1.1rem;
+  }
 
 .star { 
-    font-size: 20px; 
+    font-size: 35px; 
     cursor: pointer; 
 }
 
@@ -142,4 +156,24 @@ li {
 
 #modal-content { 
     background:#1e293b; padding:20px; border-radius:8px;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 90%;
+  max-width: 400px;
+  box-sizing: border-box;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#reward-input,
+#todo-text,
+#todo-date {
+  margin-top: 10px;
 }

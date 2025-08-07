@@ -4,58 +4,66 @@
   <meta charset="UTF-8" />
   <title>Gratify Me</title>
   <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="titlebar">
-  <div id="drag-region"></div>
-<button id="minimize-btn" aria-label="Minimize">
-  <img src="icons/minBtn.PNG" alt="Minimize" />
-</button>
-<button id="close-btn" aria-label="Close">
-  <img src="icons/xBtn.PNG" alt="Close" />
-</button>
-    </div>
-    <section id="home">
-    <h1>Gratify Me</h1>
-<button id="go-rewards" class="icon-btn">
-  <img src="icons/rewardBtn.PNG" alt="Rewards">
-</button>
+    <div id="drag-region"></div>
+    <button id="minimize-btn" aria-label="Minimize">
+      <img src="icons/minBtn.PNG" alt="Minimize" />
+    </button>
+    <button id="close-btn" aria-label="Close">
+      <img src="icons/xBtn.PNG" alt="Close" />
+    </button>
+  </div>
 
-<button id="go-todo" class="icon-btn">
-  <img src="icons/listBtn.PNG" alt="To‑Do">
-</button>
+  <section id="home">
+    <h1>Gratify Me</h1>
+    <button id="go-rewards" class="icon-btn">
+      <img src="icons/rewardBtn.PNG" alt="Rewards">
+    </button>
+    <button id="go-todo" class="icon-btn">
+      <img src="icons/listBtn.PNG" alt="To‑Do">
+    </button>
   </section>
 
-<section id="rewards" class="hidden">
-  <div id="rewards-header">
-    <button class="back icon-btn" title="Back">
-      <img src="icons/backBtn.PNG" alt="Back">
-    </button>
-    <h2>Rewards</h2>
-  </div>
-  
-  <input id="reward-input" placeholder="Add reward" />
-  <button id="add-reward" class="icon-btn">
-    <img src="icons/addBtn.PNG" alt="Add" />
-  </button>
-  <ul id="rewards-list"></ul>
-</section>
+  <section id="rewards" class="hidden">
+    <div class="header">
+      <button class="back icon-btn" title="Back">
+        <img src="icons/backBtn.PNG" alt="Back">
+      </button>
+      <div class="title-row">
+        <h2>Rewards</h2>
+      </div>
+    </div>
+    <div class="input-row">
+      <input id="reward-input" placeholder="Add reward" />
+      <button id="add-reward" class="icon-btn add-btn add-reward" title="Add Reward">
+        <img src="icons/addBtn.PNG" alt="Add" />
+      </button>
+    </div>
+    <ul id="rewards-list"></ul>
+  </section>
 
-
-<section id="todos" class="hidden">
-  <button class="icon-btn back" id="todos-back">
-    <img src="icons/backBtn.PNG" alt="Back">
-  </button>
-  <h2>To‑Do List</h2>
-  <input id="todo-text" placeholder="Task">
-  <input id="todo-date" type="date">
-  <button class="icon-btn" id="add-todo">
-    <img src="icons/addBtn.PNG" alt="Add">
-  </button>
-  <ul id="todos-list"></ul>
-</section>
+  <section id="todos" class="hidden">
+    <div class="header">
+      <button class="back icon-btn" title="Back">
+        <img src="icons/backBtn.PNG" alt="Back">
+      </button>
+      <div class="title-row">
+        <h2>To‑Do List</h2>
+      </div>
+    </div>
+    <div class="input-row">
+      <input id="todo-text" placeholder="Task" />
+      <input id="todo-date" type="date" />
+      <button id="add-todo" class="icon-btn add-btn add-todo" title="Add Todo">
+        <img src="icons/addBtn.PNG" alt="Add" />
+      </button>
+    </div>
+    <ul id="todos-list"></ul>
+  </section>
 
   <div id="modal" class="hidden">
     <div id="modal-content">
