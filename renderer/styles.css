@@ -58,6 +58,13 @@ button {
   margin: 0px;
 }
 
+button.icon-btn img.delete-btn {
+  width: auto;
+  height: 2.5rem;
+  padding: 0px;
+  margin: 0px;
+}
+
 .icon-btn.back img{
   width: 7rem; 
   height: 7rem;

@@ -29,7 +29,7 @@ async function render() {
 
     const deleteBtn = document.createElement('button');
     deleteBtn.className = 'icon-btn';
-    deleteBtn.innerHTML = `<img src="icons/deleteBtn.PNG" alt="Delete">`;
+    deleteBtn.innerHTML = `<img class="delete-btn" src="icons/deleteBtn.PNG" alt="Delete">`;
     deleteBtn.onclick = async () => {
       await window.api.deleteReward(i);
       render();
@@ -61,7 +61,7 @@ async function render() {
 
     const deleteBtn = document.createElement('button');
     deleteBtn.className = 'icon-btn';
-    deleteBtn.innerHTML = `<img src="icons/deleteBtn.PNG" alt="Delete">`;
+    deleteBtn.innerHTML = `<img class="delete-btn" src="icons/deleteBtn.PNG" alt="Delete">`;
     deleteBtn.onclick = async () => {
       await window.api.deleteTodo(i);
       render();
