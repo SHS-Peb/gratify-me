@@ -13,9 +13,9 @@ function show(view) {
 document.getElementById('go-rewards').onclick = () => show(rewardsView);
 document.getElementById('go-todo').onclick = () => show(todosView);
 document.querySelectorAll('.back').forEach(btn => btn.onclick = () => show(home));
-document.getElementById('close-modal').onclick = () => modal.classList.add('hidden');
 document.getElementById('minimize-btn').addEventListener('click', () => { window.api.minimize(); });
 document.getElementById('close-btn').addEventListener('click', () => { window.api.close(); });
+document.querySelectorAll('.close-modal').forEach(btn => { btn.addEventListener('click', () => {modal.classList.add('hidden');});});
 
 // Render data
 async function render() {
