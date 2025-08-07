@@ -50,7 +50,7 @@ async function render() {
     star.onclick = async () => {
       const result = await window.api.toggleTodo(i);
       if (result.reward) {
-        modalText.textContent = `🎉 Reward: ${result.reward}`;
+        modalText.textContent = `Congratulations! Your reward bestie: ${result.reward}`;
         modal.classList.remove('hidden');
       }
       render();
